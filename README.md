@@ -14,7 +14,8 @@ This repository contains an Apache Airflow project initialized using Astro CLI (
 
 Ensure you have the following installed:
 - Python 3
-- Docker
+- Docker (https://www.docker.com/products/docker-desktop/)
+- Astro CLI (https://www.astronomer.io/docs/astro/cli/overview)
 
 ## Getting Started
 
