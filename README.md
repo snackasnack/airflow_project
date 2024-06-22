@@ -36,11 +36,11 @@ To start the project:
 `git clone <repository_url>
 cd <project_directory>`
 
-2. Make sure the Docker Desktop is running:
+2. Make sure the Docker Desktop is running before starting Astro CLI:
 `astro dev start`
 
 3. Access Airflow UI:
-Airflow UI is available at localhost:8080 (default credentials: airflow/airflow).
+Airflow UI is available at localhost:8080 (default credentials: admin/admin).
 
 4. Monitor DAG Runs:
 Navigate to the Airflow UI to monitor and manage DAG runs.
