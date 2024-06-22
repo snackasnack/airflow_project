@@ -1,0 +1,4 @@
+dataset1_path=/usr/local/airflow/raw_files/dataset1.csv
+dataset2_path=/usr/local/airflow/raw_files/dataset2.csv
+processed_dataset1_path=/usr/local/airflow/processed_files/processed_dataset1.csv
+processed_dataset2_path=/usr/local/airflow/processed_files/processed_dataset2.csv
