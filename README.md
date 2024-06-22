@@ -17,25 +17,13 @@ Ensure you have the following installed:
 - Docker (https://www.docker.com/products/docker-desktop/)
 - Astro CLI (https://www.astronomer.io/docs/astro/cli/overview)
 
-## Getting Started
-
-1. Initialize the Airflow Environment:
-`astro dev start  # Use sudo if necessary`
-
-2. Execution Schedule:
-The DAGs are scheduled to run daily at 1am UTC.
-Workflow Overview:
-
-3. A sensor checks for the availability of required CSV files.
-The respective DAGs then run in parallel since they are independent.
-
 ## Running the Project
 
 To start the project:
 
 1. Clone this repository:
-`git clone <repository_url>
-cd <project_directory>`
+`git clone https://github.com/snackasnack/airflow_project.git
+cd airflow_project`
 
 2. Make sure the Docker Desktop is running before starting Astro CLI:
 `astro dev start`
@@ -46,8 +34,11 @@ Airflow UI is available at localhost:8080 (default credentials: admin/admin).
 4. Monitor DAG Runs:
 Navigate to the Airflow UI to monitor and manage DAG runs.
 
+5. Getting output files from scheduler container:
+`docker cp <container-id> /usr/local/airflow/processed_files/processed_dataset1.csv <download_directory>`
 
 ## Additional Notes
-
-Customize DAG scripts (dag/*.py) and utility scripts (utils/*.py) as per project requirements.
-Adjust Dockerfile (Dockerfile) and configuration files (.projectConfig) based on deployment needs.
+1. Execution Schedule:
+The DAGs are scheduled to run daily at 1am UTC.
+2. Customize DAG scripts (dag/*.py) and utility scripts (utils/*.py) as per project requirements.
+3. Adjust Dockerfile (Dockerfile) and configuration files (.projectConfig) based on deployment needs.
